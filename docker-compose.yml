@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gyn.api:
+    image: gynapi
+    build:
+      context: .
+      dockerfile: GYN.API\Dockerfile

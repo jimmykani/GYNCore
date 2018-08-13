@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYN.API", "GYN.API\GYN.API.csproj", "{B0C16ACB-C103-4E04-AD9C-CC4E67E4C5AB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6B4D883E-D6B6-404E-9549-91BAAED1D73F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYN.Core", "GYN.Core\GYN.Core.csproj", "{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYN.Infrastructure", "GYN.Infrastructure\GYN.Infrastructure.csproj", "{794235AB-4F00-4964-8174-5D870629EF2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7} = {DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYN.Services", "GYN.Services\GYN.Services.csproj", "{60AA3BB9-7E7F-4B8E-BF2A-6AD5B0A3FB0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7} = {DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}
+		{794235AB-4F00-4964-8174-5D870629EF2D} = {794235AB-4F00-4964-8174-5D870629EF2D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0C16ACB-C103-4E04-AD9C-CC4E67E4C5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C16ACB-C103-4E04-AD9C-CC4E67E4C5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C16ACB-C103-4E04-AD9C-CC4E67E4C5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C16ACB-C103-4E04-AD9C-CC4E67E4C5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4D883E-D6B6-404E-9549-91BAAED1D73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4D883E-D6B6-404E-9549-91BAAED1D73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4D883E-D6B6-404E-9549-91BAAED1D73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4D883E-D6B6-404E-9549-91BAAED1D73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC9A81C-3B0C-4FBC-984A-D587400FE2B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794235AB-4F00-4964-8174-5D870629EF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794235AB-4F00-4964-8174-5D870629EF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794235AB-4F00-4964-8174-5D870629EF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794235AB-4F00-4964-8174-5D870629EF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AA3BB9-7E7F-4B8E-BF2A-6AD5B0A3FB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AA3BB9-7E7F-4B8E-BF2A-6AD5B0A3FB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AA3BB9-7E7F-4B8E-BF2A-6AD5B0A3FB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AA3BB9-7E7F-4B8E-BF2A-6AD5B0A3FB0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFC82C92-CE6C-4486-9CF4-D335B796271B}
+	EndGlobalSection
+EndGlobal
